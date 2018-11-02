@@ -26,7 +26,7 @@ ELK Cluster with Vagrant with 3 nodes
 
 ## Urls
 
-| Node Name | Node Ip 
+| Node Name | Url
 | --- | ---- 
 |Elasticsearch|http://172.17.9.101:9200
 |Kibana|http://172.17.9.101:5601
