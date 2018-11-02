@@ -8,7 +8,7 @@ ELK Cluster with Vagrant with 3 nodes
 
 | Software              | Version     | Description                        |
 | --------------------------------- | ----------- | ----------------------------------------- |
-| CentOS|7.5| Guest OS :[chef/centos-7.1](https://app.vagrantup.com/centos/boxes/7) |
+| CentOS|7.5| [centos-7](https://app.vagrantup.com/centos/boxes/7) |
 | Java (oracle)              | 1.8.0_191    |     |
 | ElasticSearch                     | 6.4.2       | [Reference Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) / [Definitive Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html) |
 | Kibana | 6.4 | [Reference Guide](https://www.elastic.co/guide/en/kibana/current/index.html)|
@@ -26,8 +26,8 @@ ELK Cluster with Vagrant with 3 nodes
 
 ## Urls
 
-| Node Name | Node Ip | Description  |
-| --- | ---- | --- |
+| Node Name | Node Ip 
+| --- | ---- 
 |Elasticsearch|http://172.17.9.101:9200
 |Kibana|http://172.17.9.101:5601
 
@@ -47,9 +47,17 @@ vagrant up
 ```
 
 ## SSH to Nodes
+
 ```
 cd vagrant-elk-cluster
 vagrant ssh node1
 vagrant ssh node2
 vagrant ssh node3
+```
+
+## Clean Up
+
+```
+cd vagrant-elk-cluster
+vagrant destroy
 ```
